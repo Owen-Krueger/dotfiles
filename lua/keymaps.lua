@@ -30,9 +30,9 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
 -- Yank/Paste from system clipboard
-vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]])
-vim.keymap.set('n', '<leader>Y', [["+Y]])
-vim.keymap.set({ 'n', 'v' }, '<leader>p', [["+p]])
-vim.keymap.set('n', '<leader>P', [["+P]])
+vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]], { desc = 'Yank to system clipboard' })
+vim.keymap.set('n', '<leader>Y', [["+Y]], { desc = 'Yank line to system clipboard' })
+vim.keymap.set({ 'n', 'v' }, '<leader>p', [["+p]], { desc = 'Paste from system clipboard after the cursor' })
+vim.keymap.set('n', '<leader>P', [["+P]], { desc = 'Paste from system clipboard before the cursor' })
 
 -- dotnet commands are in plugins/easy-dotnet.lua
